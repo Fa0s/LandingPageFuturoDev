@@ -11,51 +11,51 @@
 </head>
 <body>
     <header class="cabecalho">
+        <a name="inicio"></a>
         <section class="cabecalho_menu-mobile">
             <div class="cabecalho_menu-hamburguer">
-                <button class="cabecalho_menu-botao" aria-label="Menu">Menu</button>
+                <button class="cabecalho_menu-botao" aria-label="Menu"></button>
             </div>
             <div class="cabecalho_titulo">
                 <span class="cabecalho_titulo-1">Futuro</span>
                 <span class="cabecalho_titulo-2">DEV</span>
             </div>
+            <nav class="menu_lateral">
+                <span class="cabecalho_titulo1">Futuro</span>
+                <span class="cabecalho_titulo2">DEV</span>
+                <a href="#" class="menu_lateral-link">Início</a>
+                <a href="#" class="menu_lateral-link">Sobre</a>
+                <a href="#" class="menu_lateral-link">Serviços</a>
+                <a href="#" class="menu_lateral-link">Depoimentos</a>
+            </nav>
         </section>
         <section class="cabecalho_desktop">
-            
             <div class="cabecalho_titulo">
                 <span class="cabecalho_titulo-1">Futuro</span>
                 <span class="cabecalho_titulo-2">DEV</span>
             </div>
             <nav class="cabecalho_menu">
                 <ul class="cabecalho_lista">
-                    <li><a href="#" class="cabecalho_link">Início</a></li>
-                    <li><a href="#" class="cabecalho_link">Sobre</a></li>
-                    <li><a href="#" class="cabecalho_link">Serviços</a></li>
-                    <li><a href="#" class="cabecalho_link">Depoimentos</a></li>
+                    <li><a href="#inicio" class="cabecalho_link">Início</a></li>
+                    <li><a href="#sobre" class="cabecalho_link">Sobre</a></li>
+                    <li><a href="#serviços" class="cabecalho_link">Serviços</a></li>
+                    <li><a href="#depoimentos" class="cabecalho_link">Depoimentos</a></li>
                 </ul>
             </nav>
             <div class="cabecalho_caixa-botao">
                 <button class="cabecalho_botao">Solicitar Serviço</button>
             </div>
+        </section>
     </header>
-    <nav class="menu_lateral">
-        <span class="cabecalho_titulo1">Futuro</span>
-        <span class="cabecalho_titulo2">DEV</span>
-        <a href="#" class="menu_lateral-link">Início</a>
-        <a href="#" class="menu_lateral-link">Sobre</a>
-        <a href="#" class="menu_lateral-link">Serviços</a>
-        <a href="#" class="menu_lateral-link">Depoimentos</a>
-    </nav>
-    </section>
     <section class="desenvolvimento">
         <div class="desenvolvimento_caixa">
-            <p class="desenvolvimento_saudacao">SEJA BEM VINDO À TURMA FUTURO DEV! 👋</p>
-            <h2 class="desenvolvimento_titulo">Desenvolvimento de soluções rápidas</h2>
-            <p class="desenvolvimento_descricao">Os programadores do time FuturoDEV desenvolvem aplicações seguras e robustas de ponta a ponta</p>
-            <button class="desenvolvimento_botao">QUERO UM DEV!</button>
-        </div>
-        <div class="desenvolvimento_container">
-            <img src="assets/img/Desenho_desenvolvedores.svg" alt="Ilustração de dois desenvolvedores" class="desenvolvimento_imagem">
+            <div class="desenvolvimento_descricao-caixa">
+                <p class="desenvolvimento_saudacao">SEJA BEM VINDO À TURMA FUTURO DEV! 👋</p>
+                <h2 class="desenvolvimento_titulo">Desenvolvimento de soluções rápidas</h2>
+                <p class="desenvolvimento_descricao">Os programadores do time FuturoDEV desenvolvem aplicações seguras e robustas de ponta a ponta</p>
+                <button class="desenvolvimento_botao">QUERO UM DEV!</button>
+            </div>
+                <img src="assets/img/Desenho_desenvolvedores(1).svg" alt="Ilustração de dois desenvolvedores" class="desenvolvimento_imagem">
         </div>
             <div class="desenvolvimento_contador">
                 <ul class="desenvolvimento_contador-lista">
@@ -76,6 +76,7 @@
     </section>
     <section class="servicos">
         <div class="servicos_titulo-caixa">
+            <a name='serviços'></a>
             <span class="servicos_descricao-subtitulo">SERVIÇOS</span>
             <h2 class="servicos_descricao-titulo">Como podemos ajudá-lo a turbinar seu negócio?</h2>
         </div>
@@ -119,6 +120,7 @@
         </div>
     </section>
         <section class="depoimentos">
+            <a name="depoimentos"></a>
             <div class="depoimentos_titulo-caixa">
                 <span class="depoimentos_descricao-subtitulo">DEPOIMENTOS</span>
                 <h2 class="depoimentos_descricao-titulo">O que os clientes dizem sobre a turma FuturoDEV</h2>
@@ -167,7 +169,8 @@
         <section class="sobre">
             <div class="sobre_container">
                 <img src="assets/img/imagem sobre nos.png" alt="imagem de um homem programando" class="sobre_imagem">
-                <div class="sobre_caixa">  
+                <div class="sobre_caixa"> 
+                    <a name="sobre"></a> 
                     <span class="sobre_subtitulo">SOBRE NÓS</span>
                     <h2 class="sobre_titulo">Entenda quem somos e por que existimos</h2>
                     <p class="sobre_descricao">Amet minim mollit non deserunt ullamco est 
@@ -185,8 +188,10 @@
     <section class="contato">
         <div class="contato_caixa">
             <h2 class="contato_titulo">Entre em contato com a gente!</h2>
-            <span class="contato_endereco">R. Amauri Souza, 346</span>
-            <span class="contato_email">contato@beautysalon.com</span>
+            <div class="contato_enderecos">
+                <span class="contato_endereco">R. Amauri Souza, 346</span>
+                <span class="contato_email">contato@beautysalon.com</span>
+            </div>
             <button class="contato_botao">AGENDE SEU SERVIÇO</button>
         </div>
         <img src="assets/img/imagem entre em contato.png" alt="foto de um homem com o celular na mão" class="contato_imagem">
@@ -201,9 +206,15 @@
                 <span class="rodape_direitos">Todos os direitos reservados.</span>
             </div>
             <div class="rodape_icones">
-                <img src="assets/img/instagram 1.svg" alt="Icone do instagram" class="rodape_icone">
-                <img src="assets/img/facebook 1.svg" alt="Icone do Facebook" class="rodape_icone">
-                <img src="assets/img/youtube 1.svg" alt="Icone do Youtube" class="rodape_icone">
+                <a href="https://instagram.com/lab365_/" target="_blank"><img src="assets/img/instagram 1.svg" alt="Icone do instagram" class="rodape_icone"></a>
+                <a href="https://www.linkedin.com/company/lab365/" target="_blank">
+                    <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" class="rodape_icone">
+                        <path d="M4.425,1.671A2.738,2.738,0,0,0,1.5,4.4,2.71,2.71,0,0,0,4.369,7.128H4.4a2.734,2.734,0,1,0,.028-5.457ZM4.4,6.128H4.369a1.736,1.736,0,1,1,.056-3.457A1.737,1.737,0,1,1,4.4,6.128Z"></path>
+                        <path d="M6.541,8.431H2.253a.5.5,0,0,0-.5.5v12.9a.5.5,0,0,0,.5.5H6.541a.5.5,0,0,0,.5-.5V8.931A.5.5,0,0,0,6.541,8.431Zm-.5,12.9H2.753V9.431H6.041Z"></path>
+                        <path d="M17.064,8.128A4.691,4.691,0,0,0,13.7,9.362V8.931a.5.5,0,0,0-.5-.5H8.914a.5.5,0,0,0-.5.523c.053,1.183,0,12.756,0,12.873a.5.5,0,0,0,.5.5H13.2a.5.5,0,0,0,.5-.5v-7.2a2.749,2.749,0,0,1,.1-.86,1.869,1.869,0,0,1,1.737-1.254c.413,0,1.671,0,1.671,2.417v6.9a.5.5,0,0,0,.5.5H22a.5.5,0,0,0,.5-.5v-7.4C22.5,10.485,20.467,8.128,17.064,8.128Zm4.436,13.2H18.213v-6.4c0-2.973-1.673-3.417-2.671-3.417a2.83,2.83,0,0,0-2.664,1.878,3.253,3.253,0,0,0-.177,1.236v6.7H9.416c.009-2.058.04-9.654.009-11.9H12.7v1.328a.5.5,0,0,0,.92.272,3.769,3.769,0,0,1,3.443-1.9c2.819,0,4.436,1.934,4.436,5.305Z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/c/lab365" target="_blank"><img src="assets/img/youtube 1.svg" alt="Icone do Youtube" class="rodape_icone"></a>
             </div>
         </footer>
     </body>
