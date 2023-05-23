@@ -1,5 +1,5 @@
-/*  TODO: -implementação do menu mobile  
-    TODO:- Implementação Menu slide*/
+ 
+    /*TODO:- Implementação Menu slide*/
 
 
 :root{
@@ -160,14 +160,13 @@ body{
     justify-content: space-around;
     height:26vh;
     margin: auto;
-    opacity: 0.9;
     width: 86%;
 }
 
 .desenvolvimento_contador-lista{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
     padding: 50px 0;
 }
@@ -505,6 +504,13 @@ body{
     margin:15px 0
 }
 
+.contato_enderecos{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 30px 0;
+}
+
 .contato_email::before{
     content:"";
     background-repeat: no-repeat;
@@ -582,8 +588,6 @@ body{
     fill: white;
     
 }
-
-
 
 @media screen and (max-width:1024px) {
  
@@ -681,13 +685,12 @@ body{
 
 @media screen and (max-width:850px){
 
- 
-    .cabecalho_desktop{
-        display: none;
+    .cabecalho_titulo{
+        margin: 0;
     }
 
-    .cabecalho_titulo{
-        margin: 0 14vw;
+    .cabecalho_caixa-botao{
+        display: none;
     }
 
     .desenvolvimento{
@@ -840,6 +843,72 @@ body{
 
 @media screen and (max-width:550px){
 
+    .cabecalho_desktop{
+        display: none;
+    }
+
+    .cabecalho_titulo{
+        margin: 0 14vw;
+    }
+    
+    .cabecalho_menu-mobile{
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        position: fixed;
+        background-color: var(--fundo-azul-ceu);
+        width: 100%;
+    }
+    
+    .cabecalho_menu-botao{
+        justify-content: flex-start;
+        margin: 10px;
+        border: none;
+        background-color: transparent;
+    }
+
+    .cabecalho_menu-botao i::before{
+        background-image: url(/assets/img/menu.png);
+        background-size: 30px 30px;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+    }
+
+    .menu_lateral{
+        background-color: var(--fundo-branco-gelo);
+        border: solid 1px var(--cor-azul-fundo);
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        left: -100vw;
+        opacity: 0.95;
+        position: absolute;
+        top: 7vh;
+        transition: .75s;
+        width: 75vw;
+    }
+
+    .menu_lateral-ativo{
+        left: 0;
+        top: 7vh;
+        transition: .75s;
+    }
+
+    .menu_lateral-titulo{
+        margin: 10px auto;
+        font-size: 30px;
+    }
+
+    .menu_lateral-link{
+        text-decoration: none;
+        font-size: 30px;
+        margin: 15px auto;
+        color: black;
+        font-weight: bold;
+    }
 
     .desenvolvimento_saudacao{
         font-size: 10px;
@@ -859,6 +928,10 @@ body{
 
     .desenvolvimento_contador-descricao{
         font-size: 14px;
+    }
+
+    .desenvolvimento_contador-divider1,.desenvolvimento_contador-divider2{
+        display: none;
     }
 
     .servicos_descricao-titulo, .empresas_titulo, .sobre_titulo, .contato_titulo{
@@ -893,6 +966,5 @@ body{
         align-items: center;
         margin-bottom: 4vh;
     }
-
 
 }
