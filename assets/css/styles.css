@@ -695,7 +695,7 @@ body{
 
     .desenvolvimento{
         text-align: center;
-        height: 45vh;
+        height: 50vh;
     }
 
     .desenvolvimento_caixa{
@@ -735,7 +735,7 @@ body{
     }
 
     .desenvolvimento_contador{
-        height: 15vh;
+        height:  fit-content;
     }
 
     .desenvolvimento_contador-divider1{
@@ -910,6 +910,10 @@ body{
         font-weight: bold;
     }
 
+    .desenvolvimento{
+        height: 45vh;
+    }
+
     .desenvolvimento_saudacao{
         font-size: 10px;
     }
@@ -924,6 +928,10 @@ body{
 
     .desenvolvimento_contador-titulo{
         font-size: 30px;
+    }
+
+    .desenvolvimento_contador{
+        height: 15vh;
     }
 
     .desenvolvimento_contador-descricao{
