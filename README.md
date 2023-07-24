@@ -14,7 +14,7 @@
 - 📊 [Demonstração](#-demonstração)
 
 
-## 📃Sobre
+## 📃 Sobre
 Projeto feito como exercício no curso Analista de Desenvolvimento Web Senai
 
 ## ✅ Requisitos
