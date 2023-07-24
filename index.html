@@ -7,6 +7,7 @@
     <title>| Home - LandingPage FuturoDev | </title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -127,33 +128,57 @@
                 <span class="depoimentos_descricao-subtitulo">DEPOIMENTOS</span>
                 <h2 class="depoimentos_descricao-titulo">O que os clientes dizem sobre a turma FuturoDEV</h2>
             </div>
-            <div class="depoimentos_container">
-                <div class="depoimento_caixa">
-                        <img src="assets/img/Aspas.svg" alt="ilustração de aspas" class="depoimentos_subtitulo">
-                        <p class="depoimentos_descricao">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                            Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                             Velit officia consequat duis enim.</p>
-                             <div class="avatar_caixa">
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="depoimento_caixa">
+                            <img src="assets/img/Aspas.svg" alt="ilustração de aspas" class="depoimentos_subtitulo">
+                            <p class="depoimentos_descricao">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                 Velit officia consequat duis enim.</p>
+                            <div class="avatar_caixa">
                                 <img src="assets/img/avatar 1.png" alt="avatar do rosto de uma mulher" class="depoimentos_avatar">
                                 <span class="depoimentos_nome">Wanessa Souza</span>
                             </div>
-                </div>
-                <div class="depoimento_caixa">
-                    <img src="assets/img/Aspas.svg" alt="ilustração de aspas" class="depoimentos_subtitulo">
-                    <p class="depoimentos_descricao">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                         Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                          Velit officia consequat duis enim.</p>
-                          <div class="avatar_caixa">
-                            <img src="assets/img/avatar 1.png" alt="avatar do rosto de uma mulher" class="depoimentos_avatar">
-                            <span class="depoimentos_nome">Wanessa Souza</span>
                         </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento_caixa">
+                            <img src="assets/img/Aspas.svg" alt="ilustração de aspas" class="depoimentos_subtitulo">
+                            <p class="depoimentos_descricao">Estou extremamente satisfeito com os serviços do site de formação de desenvolvedores 
+                                para necessidades específicas. Desde o início, a equipe foi profissional e atenciosa, entendendo perfeitamente as 
+                                particularidades do meu projeto.</p>
+                            <div class="avatar_caixa">
+                                <img src="assets/img/avatar_2.png" alt="desenho de um rosto masculino" class="depoimentos_avatar">
+                                <span class="depoimentos_nome">Felipe Noronha</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="depoimento_caixa">
+                            <img src="assets/img/Aspas.svg" alt="ilustração de aspas" class="depoimentos_subtitulo">
+                            <p class="depoimentos_descricao">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                Velit officia consequat duis enim. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                 Velit officia consequat duis enim.</p>
+                            <div class="avatar_caixa">
+                                <img src="assets/img/avatar_3.png" alt="avatar do rosto de uma mulher" class="depoimentos_avatar">
+                                <span class="depoimentos_nome">Abgail Turner</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="depoimentos_slider-box">
-                <div class="depoimentos_slider-ball bola_azul"></div>
-                <div class="depoimentos_slider-ball"></div>
-                <div class="depoimentos_slider-ball"></div>
-            </div>
+
         </section>
         <section class="empresas">
             <span class="empresas_titulo">Empresas que confiam</span>
@@ -220,6 +245,7 @@
                 <a href="https://www.youtube.com/c/lab365" target="_blank"><img src="assets/img/youtube 1.svg" alt="Icone do Youtube" class="rodape_icone"></a>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="assets/js/index.js"></script>
     </body>
 </html> 
